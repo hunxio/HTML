@@ -1,0 +1,95 @@
+/* MAIN */
+body {
+    background-color: #887674;
+    font-family: arial;
+    font-size: 16px;
+    padding: 15px;
+}
+
+div {
+    width: 650px;
+    margin: auto;
+    text-align: center;
+    background-color: #f3eae8;
+    padding-top: 1px;
+    max-width: 600px;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: middle;
+}
+
+.biografia,
+.passaggi {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.ingradienti {
+    text-align: left;
+}
+
+.ricettelink {
+    text-align: left;
+}
+
+.ricettelink1 {
+    text-align: left;
+    padding-left: 27px;
+}
+
+.titolo_ingradienti {
+    text-align: left;
+    padding-left: 27px;
+}
+
+/* IMMAGINI */
+.fotochef {
+    width: 175px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.fotopasta {
+    height: 230px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+hr {
+    height: 1px;
+    background-color: #887674;
+    border-color: #887674;
+    width: 550px;
+}
+
+/* FOOTER */
+
+a {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #887674;
+}
+
+.copyright {
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}

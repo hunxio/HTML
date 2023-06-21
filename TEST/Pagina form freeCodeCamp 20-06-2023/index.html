@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+    <title>freeCodeCamp Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    </header>
+    <form id="survey-form">
+
+        <div class="div-form">
+            <label id="name-label" for="name">Name <input class="userInput" type="text" id="name" placeholder="Enter your name" required></label>
+        </div>
+
+        <div class="div-form">
+            <label id="email-label" for="email">Email <input class="userInput" type="email" id="email" placeholder="Enter your email" required> </label>
+        </div>
+
+        <div class="div-form">
+            <label id="number-label" for="age">Age (optional) <input class="userInput" type="number" id="number" min="13" max="120" placeholder="Age"></label>
+        </div>
+
+        <div class="div-form">
+            <p>Which option best describes your current role?</p>
+            <select class="userInput" id="dropdown" name="role" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="prefet-not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="div-form">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label><input type="radio" id="definitely" name="definitely-maybe-notSure" value="definitely" checked> Definitely</label>
+            <label><input type="radio" name="definitely-maybe-notSure" id="maybe" value="maybe"> Maybe</label>
+            <label><input type="radio" name="definitely-maybe-notSure" id="notSure" value="not_sure"> Not sure</label>
+        </div>
+
+        <div class="div-form">
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select class="userInput" id="dropdown" required>
+                <option disabled selected value> Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+        </div>
+
+        <div class="div-form">
+            <p>What would you like to see improved? (Check all that apply) </p>
+            <label><input type="checkbox" value="front_end_projects"> Front-end Projects</label>
+            <label><input type="checkbox" value="back_end_projects"> Back-end Projects</label>
+            <label><input type="checkbox" value="data visualization"> Data Visualization</label>
+            <label><input type="checkbox" value="challenges"> Challenges</label>
+            <label><input type="checkbox" value="open_source_community"> Open Source Community</label>
+            <label><input type="checkbox" value="gitter_help_rooms"> Gitter help rooms</label>
+            <label><input type="checkbox" value="videos"> Videos</label>
+            <label><input type="checkbox" value="city_meetups"> City Meetups</label>
+            <label><input type="checkbox" value="wiki"> Wiki</label>
+            <label><input type="checkbox" value="forum"> Forum</label>
+            <label><input type="checkbox" value="additional_courses"> Additional Courses</label>
+        </div>
+
+        <div class="div-form">
+            <p>Any comments or suggestions?</p>
+            <textarea class="userInput" id="comments" name="comments" placeholder="Enter your comment here..." rows="5" cols="40"></textarea>
+        </div>
+
+        <div class="div-form">
+            <input type="submit" value="Submit" id="submit" />
+        </div>
+    </form>
+</body>
+
+</html>
+
+<!-- IT HAS TO LOOK SIMILIAR TO THIS WEBPAGE FORM: https://survey-form.freecodecamp.rocks/-->
+
+<!-- 
+
+EDITS
+
+- .div-form > label {}
+- ids changed to values in the dropdown menus, the value DISABLE SELECTED VALUE makes an option readable for the user but not clickable/usable. 
+-->
