@@ -15,6 +15,9 @@ body {
     border-bottom: 4px solid rgba(255, 169, 0, 1);
 }
 
+
+/* PICTURES */
+
 .gallery {
     display: flex;
     flex-direction: row;
@@ -33,6 +36,7 @@ div > img {
     width: 400px;
     max-width: 450px;
     border-radius: 30px;
+
 }
 
 /* FONTS */
