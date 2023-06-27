@@ -1,0 +1,45 @@
+/* PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.title {
+    background-color: rgba(0, 0, 37, 1);
+    padding: 32px;
+    border-bottom: 4px solid rgba(255, 169, 0, 1);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    padding: 20px 10px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+div > img {
+    object-fit: cover;
+    height: 350px;
+    width: 400px;
+    max-width: 450px;
+    border-radius: 30px;
+}
+
+/* FONTS */
+
+h1 {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 38px;
+}
