@@ -1,0 +1,70 @@
+/* CONTEXT WEBSITE */
+
+html {
+    font-family: "Verdana", sans-serif;
+    color: #fffcf8;
+}
+
+body {
+    /*background-color: green;*/
+    margin: 0;
+    background-color: #262626 ;
+    
+}
+
+/* WEBPAGE */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #262626;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+main {
+    width: 900px;
+    background-color:#333333;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.necromancer-picture {
+    flex-basis: 300%
+}
+
+img {
+    max-width: 100%
+}
+
+/* FONTS */
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 10px;
+}
+.text {
+    font-size: 18px;
+    padding-left: 20px;
+    
+    
+}
