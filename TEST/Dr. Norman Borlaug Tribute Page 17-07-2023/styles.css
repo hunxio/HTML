@@ -62,6 +62,7 @@ footer,
 
 ul > li {
     font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .timeline-title {
@@ -82,6 +83,7 @@ ul > li {
 .details {
     font-size: 16px;
     padding-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .title {
@@ -99,4 +101,5 @@ img {
     font-weight: 750;
     font-size: 19px;
     padding-bottom: 35px;
+    letter-spacing: 1px;
 }
