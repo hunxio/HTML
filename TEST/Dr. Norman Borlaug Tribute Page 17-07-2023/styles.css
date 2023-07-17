@@ -34,10 +34,14 @@ body {
     padding-bottom: 5px;
     width: 580px;
     margin: auto;
+    max-width: 100%;
 }
 
 ul > li {
     padding-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-right: 7px;
 }
 
 /* FONT AND IMG */
@@ -60,11 +64,6 @@ footer,
     text-align: center;
 }
 
-ul > li {
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
 .timeline-title {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -84,6 +83,7 @@ ul > li {
     font-size: 16px;
     padding-bottom: 15px;
     letter-spacing: 1px;
+    padding-left: 10px;
 }
 
 .title {
