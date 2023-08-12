@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="sylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Original Trombones</title>
+</head>
+
+<body>
+    <header id="header">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="header-logo" id="header-img" width="200" />
+        <nav id="nav-bar">
+            <ul>
+                <!-- Every section in the navigation bar is linked to its section in the page -->
+                <li class="nav-link" id="features"><a href="#Features" class="nav-connection">Features</a></li>
+                <li class="nav-link" id="how-it-works"><a href="#How It Works" class="nav-connection">How It Works</a></li>
+                <li class="nav-link" id="pricing"><a href="#Pricing" class="nav-connection">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 4 sections in my body: a form, a features, a video and prices -->
+    <form>
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <input id="email" type="email" placeholder="Enter your email address" />
+    </form>
+    <input type="submit" id="submit" value="GET STARTED" action="https://www.freecodecamp.com/email-submit" />
+    <section id="Features">
+        <h2>Premium Materials</h2>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        <h2>Fast Shipping</h2>
+        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        <h2>Quality Assurance</h2>
+        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </section>
+    <section id="How It Works">
+        <!-- I embed it like this by using the embing tool on YouTube, had problems with only using "src" and "id" in my <iframe>, showing a broken link -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="video" allowfullscreen></iframe>
+    </section>
+    <section id="Pricing">
+        <div id="optionOne" class="price">
+            <h3>TENOR TROMBONE</h3>
+            <h4>$600</h4>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <!-- There is no "action" in my submit button because it is not specified where it points to -->
+            <input type="submit" id="optionOneSubmit" class="pricing-submit" value="SELECT" />
+        </div>
+        <div id="optionTwo" class="price">
+            <h3>BASS TROMBONE</h3>
+            <h4>$900</h4>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum.</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <input type="submit" id="optionTwoSubmit" class="pricing-submit" value="SELECT" />
+        </div>
+        <div id="optionThree" class="price">
+            <h3>VALVE TROMBONE</h3>
+            <h4>$1200</h4>
+            <p>Plays similiar to a Trumpet</p>
+            <p>Great for Jazz Brands</p>
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+            <input type="submit" id="optionThreeSubmit" class="pricing-submit" value="SELECT" />
+        </div>
+    </section>
+    <footer id="footer">
+        <ul>
+            <li class="footer-link"><a href="" id="privacy" alt="_blank">Privacy</a></li>
+            <li class="footer-link"><a href="" id="privacy" alt="_blank">Terms</a></li>
+            <li class="footer-link"><a href="" id="privacy" alt="_blank">Contact</a></li>
+        </ul>
+        <p>Copyright 2016, Original Trombones</p>
+    </footer>
+</body>
+
+</html>
+<!-- It has to look like this : https://product-landing-page.freecodecamp.rocks -->
