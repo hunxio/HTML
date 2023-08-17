@@ -13,7 +13,7 @@
     <header id="header">
         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="header-logo" id="header-img" class="lazy" />
         <nav id="nav-bar">
-            <ul class="right-list-nav">
+            <ul class="right-list-nav fixcenter">
                 <!-- Every section in the navigation bar is linked to its section in the page -->
                 <li id="features"><a href="#Features" class="nav-link">Features</a></li>
                 <li id="how-it-works"><a href="#How It Works" class="nav-link">How It Works</a></li>
@@ -21,7 +21,7 @@
             </ul>
         </nav>
     </header>
-    <!-- 4 sections in my body: a form, a features, a video and prices -->
+    <!-- 4 sections in my body: a form, the features, a video and prices -->
     <div class="container">
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <h2 id="form-title">Handcrafted, home-made masterpieces</h2>
@@ -49,7 +49,7 @@
             <!-- I embed it like this by using the embing tool on YouTube, had problems with only using "src" and "id" in my <iframe>, showing a broken link -->
             <div id="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="video" allowfullscreen></iframe></div>
         </section>
-        <section id="prices">
+        <form id="Pricing" class="price-section">
             <div id="optionOne" class="price">
                 <h3 class="title headtitle">TENOR TROMBONE</h3>
                 <h4 class="optprice">$600</h4>
@@ -84,7 +84,6 @@
                 </ul>
                 <div class="buttonsubmit"><input type="submit" id="optionThreeSubmit" class="pricing-submit" value="SELECT" /></div>
             </div>
-        </section>
         </form>
         <footer id="footer">
             <nav id="footer-bar">
@@ -93,8 +92,8 @@
                     <li id="privacy"><a href="#header" id="privacy" class="nav-link">Privacy</a></li>
                     <li id="terms"><a href="#header" id="terms" class="nav-link">Terms</a></li>
                     <li id="contact"><a href="#header" id="contact" class="nav-link">Contact</a></li>
+                </ul>
             </nav>
-            </ul>
             <p id="copyright">Copyright 2016, Original Trombones</p>
         </footer>
     </div>

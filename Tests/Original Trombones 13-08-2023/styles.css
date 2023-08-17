@@ -36,10 +36,6 @@ html {
     z-index: 1;
 }
 
-#pricing {
-    padding-right: 100px;
-}
-
 ul {
     gap: 40px;
     list-style: none;
@@ -54,18 +50,25 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
 
+#header .right-list-nav {
+    padding-right: 45px;
 }
 
 /* Body */
 
 /* Mailing Section */
-form {
+#form {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 60px;
+}
+
+.container #form-title {
+    display: inline;
 }
 
 #email {
@@ -91,17 +94,15 @@ form {
 
 /* Main Section */
 .container {
-    margin: 0 230px;
-    scroll-behavior: smooth;
-    padding-top: 160px;
+    margin: 0 150px;
+    padding-top: 130px;
 }
 
 /*Features Section */
 .icon {
     color: #eb741e;
     position: absolute;
-    left: 250px;
-    z-index: 0;
+    left: 175px;
 }
 
 .description,
@@ -131,12 +132,13 @@ form {
     text-align: center;
 }
 
-#prices {
+.price-section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 20px;
-    padding: 30px 0 30px 0;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 40px 0 25px 0;
 }
 
 .headtitle {
@@ -155,7 +157,6 @@ form {
 .quality-list li {
     padding-top: 20px;
     text-align: center;
-
 }
 
 .quality-list {
@@ -166,7 +167,6 @@ form {
     padding-top: 50px;
     display: flex;
     justify-content: center;
-
 }
 
 /* Footer */
@@ -187,4 +187,46 @@ form {
     justify-content: flex-end;
     font-size: 17px;
     padding-bottom: 18px;
+}
+
+/* @media querys */
+@media only screen and (max-width: 1206px) {
+    .price-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        padding: 40px 0 25px 0;
+    }
+}
+
+@media only screen and (max-width: 856px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        height: 90px;
+        position: fixed;
+        background-color: var(--bg-color1);
+        width: 100%;
+        z-index: 1;
+    }
+
+}
+
+@media only screen and (max-width: 785px) {
+    .container {
+        margin: 0 80px;
+        padding-top: 135px;
+    }
+
+    .icon {
+        color: #eb741e;
+        position: absolute;
+        left: 105px;
+    }
 }
