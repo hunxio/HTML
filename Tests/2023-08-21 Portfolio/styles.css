@@ -1,9 +1,9 @@
 /* Up Class */
 :root {
-    --color1: white;
-    --color2: #F76C6C;
-    --color3: #A8D0E6;
-    --color4: #374785;
+    --color1: #edf2f4;
+    --color2: #e71d36;
+    --color3: #8d99ae;
+    --color4: #2b2d42;
 }
 
 * {
@@ -13,7 +13,7 @@
 }
 
 html {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     scroll-behavior: smooth;
     font-size: 10px;
 }
@@ -46,8 +46,8 @@ a {
     color: var(--color1);
 }
 
-#navbar a:hover {
-    text-decoration: underline var(--color1);
+#navbar li:hover {
+    color: var(--color4);
 }
 
 /* Welcome Section */
@@ -60,11 +60,12 @@ a {
 #welcome-section {
     background-color: var(--color4);
     height: 850px;
+    text-align: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 #welcome-section h1 {
@@ -82,8 +83,8 @@ a {
 /* Projects Section */
 #projects {
     background-color: var(--color3);
-    height: 1250px;
-    color: white;
+    height: auto;
+    color: var(--color1);
 }
 
 #projects h1 {
@@ -93,64 +94,81 @@ a {
 }
 
 .project-tile {
-    width: 450px;
-    height: 450px;
-    border-radius: 0 0 7px 7px;
-    background-color: var(--color2);
-}
-
-.underline-gap {
-    border: 2px solid var(--color2);
-    width: 690px;
-    margin: auto;
-}
-
-.project-boxes {
-    padding-top: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     margin: auto;
-    max-width: 1500px;
+    padding: auto;
+    width: 450px;
+    max-width: auto;
+    height: 450px;
+    max-height: auto;
+    border-radius: 0 0 7px 7px;
+    background-color: var(--color4);
+}
+
+.project-tile:hover {
+    background-color: var(--color2);
+}
+
+.underline-gap {
+    border: 2px solid var(--color2);
+    width: 40%;
+    margin: auto;
+}
+
+.project-boxes {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 100%;
+    padding: auto;
     gap: 30px;
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
 
 .preview {
     width: 100%;
     height: 85%;
-
 }
 
 .project-tile p {
     font-size: 2.8em;
     text-align: center;
-    padding-top: 18px;
+    padding: auto;
 }
 
 #button {
-    width: 10vw;
-    height: 7.2vh;
-    background-color: var(--color2);
+    width: auto;
+    height: auto;
+    background-color: var(--color4);
     color: var(--color1);
     font-size: 2em;
     border-radius: 6px;
     border: transparent;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#button:hover {
+    background-color: var(--color2);
 }
 
 #button-space {
     display: flex;
     justify-content: center;
     padding-top: 3.5vh;
+    padding-bottom: 3vh;
 }
 
 /* Conctact Section */
 
 #contact {
     background-color: var(--color4);
-    height: 630px;
+    height: auto;
 }
 
 #contact h2 {
@@ -164,22 +182,22 @@ a {
 #contact h1 {
     color: var(--color1);
     text-align: center;
-    padding-top: 4vh;
+    padding-top: 5vh;
     font-size: 4.7em;
     padding-bottom: 1.5vh;
 }
 
 #contact ul {
-    padding-top: 25vh;
-    padding-bottom: 30vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     font-size: 2.9em;
 }
 
-#contact a:hover {
-    text-decoration: underline var(--color2);
+#contact li:hover {
+    color: var(--color2);
 }
 
 /* Footer Section */
@@ -199,7 +217,8 @@ a {
 #footer p {
     color: var(--color1);
     font-size: 2.2em;
-    padding-bottom: 3.5vh;
+    padding-bottom: 1.8vh;
+    padding-top: 1.8vh;
 }
 
 #author a:hover {
@@ -226,9 +245,9 @@ a {
     }
 }
 
-
-/* 
-@media screen and (max-width: xxxxpx) {
-
+@media screen and (max-width:580px) {
+    #navbar ul {
+        gap: 4.7vw;
+        padding-right: 25px;
+    }
 }
-*/
