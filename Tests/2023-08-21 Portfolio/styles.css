@@ -1,9 +1,9 @@
 /* Up Class */
 :root {
-    --color1: #edf2f4;
-    --color2: #e71d36;
-    --color3: #8d99ae;
-    --color4: #2b2d42;
+    --color1: #E7E7E7;
+    --color2: #B22740;
+    --color3: #E7E7E7;
+    --color4: #292F3F;
 }
 
 * {
@@ -84,7 +84,7 @@ a {
 #projects {
     background-color: var(--color3);
     height: auto;
-    color: var(--color1);
+    color: var(--color4);
 }
 
 #projects h1 {
@@ -237,7 +237,7 @@ a {
     }
 
     75% {
-        color: var(--color2)
+        color: var(--color2);
     }
 
     100% {
@@ -249,5 +249,11 @@ a {
     #navbar ul {
         gap: 4.7vw;
         padding-right: 25px;
+    }
+}
+
+@media screen and (min-width:1920px) and (max-width: 2200px) {
+    .project-boxes {
+        width: 1500px;
     }
 }
